@@ -14,8 +14,8 @@
 - Does the depth and distance of shore affect microbial diversity of the fish?
 
 ### Anemia during Infancy
-a. Does solid/liquid diet affect TCA cycle metabolites in anemic infants?
-b. Alpha diversity in anemic infants?
+- Does solid/liquid diet affect TCA cycle metabolites in anemic infants?
+- Alpha diversity in anemic infants?
 
 ### Vaping and Smoking 
 - Forms of tobacco use (e-cigarettes, chewing tobacco, second-hand smoke exposure) on the gut microbiome?
