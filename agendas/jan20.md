@@ -1,6 +1,6 @@
 # Team 7 Meeting #2, January 20th, 2026
 
-##  Project Ideas
+##  Datasets and Research Questions - Finalizing a Topic
 ### IBD Ryan
 - Do sex differences in the gut microbiome modify responses to treatment to various drugs for Crohn’s disease?
 - 6 drugs with enough samples and it could also be interesting to compare the treatment combinations (with and without anti-TNF)
