@@ -8,7 +8,9 @@
 
 ### Fish
 - Does the species of fish and microbial diversity affect swimming performance and what depth they reside?
-- 5 groups of different fish performances, 30+ different fish, can be a viable, novel research topic from literature review, papers showing biological and environmental differences for fish or microbial diversity for fitness of fish. 
+- 5 groups of different fish performances, 30+ different fish, can be a viable, novel research topic from literature review, papers showing biological and environmental differences for fish or microbial diversity for fitness of fish.
+- https://pubmed.ncbi.nlm.nih.gov/39466622/
+- https://pubmed.ncbi.nlm.nih.gov/40564368/
 
 ### Anemia during Infancy
 - Does solid/liquid diet affect TCA cycle metabolites in anemic infants?
