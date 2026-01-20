@@ -1,5 +1,6 @@
 # Team 7 Meeting #2, January 20th, 2026
-===
+We have curated research questions based on the discussions we had last team meeting. We have narrowed our potential projects down to three datasets and 6 potential research questions.
+
 ##  Datasets and Research Questions - Finalizing a Topic
 
 ### IBD Ryan
