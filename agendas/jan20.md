@@ -14,7 +14,7 @@ We have curated research questions based on the discussions we had last team mee
 - Use alpha and beta diversity to narrow down drugs
 - Find out which drugs to focus on, 1 or 2. Look at gut microbiome, sex differences and see if it acts the same with TNF and anti-TNF.
 
-**Workflow**\
+**Workflow**
 - Filter for Crohn's disease
 - Pre-cursor, look at literature to see what drugs affect the gut microbiome, do beta diversity
 - Analyses, with and without the drug in differential abundance, taxonimical analysis
@@ -34,7 +34,7 @@ The research papers cited in creating the research questions can be found here.
 - Can't do just depth for analysis, would have to connect with swimming performance
 - Key terms for fast and slow fish 
 
-**Workflow**\
+**Workflow**
 - Determine the groups
 - Compare broadly slow vs. fast groups (alpha and beta diversity) - 2 group comparison
 - Differential abundance
