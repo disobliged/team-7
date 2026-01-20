@@ -7,7 +7,7 @@ We have curated research questions based on the discussions we had last team mee
 - Do sex differences in the gut microbiome modify responses to treatment to various drugs for Crohn’s disease?
 - 6 drugs with enough samples and it could also be interesting to compare the treatment combinations (with and without anti-TNF)
 
-**Comments**\
+**Comments**
 - Not much literature specifically investigating sex differences in the gut microbiome and how these differences change in response to treatment. Not specifically in terms of medications/drugs. 
 - Good amount of samples and groups
 - Narrow down the groups, filter
