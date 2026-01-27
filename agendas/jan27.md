@@ -1,5 +1,6 @@
 # Team 7 Meeting #3, January 27th, 2026
-We have narrowed down our research project to the Fish dataset, with our research question as: Does the species of fish and microbial diversity affect swimming performance and what depth they reside?
+We have narrowed down our research project to the fish dataset, with our research question as: 
+- Does the species of fish and microbial diversity affect swimming performance and what depth they reside?
 
 ##  Fish Dataset and Group Assignment 1 
 
