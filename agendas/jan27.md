@@ -30,3 +30,4 @@ The research papers cited in creating the research questions can be found here.
 
 **Comments**
 ![WhatsApp Image 2026-01-26 at 3 56 25 PM](https://github.com/user-attachments/assets/e5819f15-c6bf-4af8-9862-6cc55b920c23)
+- Issue with PHRED Quality Score when demultiplexing the fish dataset, having trouble choosing a truncation length
