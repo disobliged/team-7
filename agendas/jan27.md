@@ -26,3 +26,6 @@ The research papers cited in creating the research questions can be found here.
 - Do other analyses not included in the course
 - Issue with making it complicated enough
 
+### Group Assignment 1
+
+**Comments**\
