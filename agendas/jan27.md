@@ -42,3 +42,4 @@ Issue with making it complicated enough
 - Swim groups (figure out which is which)
 - Within those 5 or 2, check if the swim groups are based on depth
 - For microbiota, each fish is sampled from 4 places, focus on 1 each analysis to be consistent for alpha diversity.
+- Check the rank of the fish (pred vs. prey)
