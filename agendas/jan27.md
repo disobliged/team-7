@@ -37,3 +37,8 @@ Issue with making it complicated enough
 - This is the ```demux.qzv``` file.
 - Issue with PHRED Quality Score when demultiplexing the fish dataset, having trouble choosing a truncation length.
 - Do we preserve read length, or high-quality reads?
+
+### Suggestions for next time
+- Swim groups (figure out which is which)
+- Within those 5 or 2, check if the swim groups are based on depth
+- For microbiota, each fish is sampled from 4 places, focus on 1 each analysis to be consistent for alpha diversity.
