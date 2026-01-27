@@ -28,4 +28,4 @@ The research papers cited in creating the research questions can be found here.
 
 ### Group Assignment 1
 
-**Comments**\
+**Comments**
