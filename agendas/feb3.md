@@ -2,7 +2,7 @@
 Research Question:
 > Do fish species and their associated microbial diversity in hindgut samples influence swimming performance and preferred depth in water? 
 
-##  Fish Dataset and Group Assignment 2 
+##  Fish Dataset and Group Assignment 2 - Minutes by Izaak Yip
 
 ### Develop 'Aims'
 - Focused questions to answer specific parts of the main research question
