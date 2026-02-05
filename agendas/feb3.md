@@ -21,20 +21,23 @@ For (1) Alpha & beta diversity metrics
 Can break them down further into...
 - trophic levels
 - substrata collection (although this may become less relevant, since seafloor is a tangent to our research question)
+
 For (2) Compositional metrics on core microbiome
 - other students found different geographical locations had different specific core microbiomes
+
 For (3) Functional analysis
 - Consider whether fast fish have certain microbiota
 - which pathways are regulated
 - for literature search, check which pathways to look for (KEGG, etc.)
 - for KEGG, a good starting point would be to check pathways associated with higher energy outputs
 - e.g. for humans there's SCFA production, complex carb breakdown
-##### Subgrouping our data
+
+#### Subgrouping our data
 Imogen suggested another possible addition to our work once completing initial analyses
 If one group (e.g. fast high fish) stands out in terms of significantly higher diversity, we can run specific analyses on that group.
 Within this group... how does a certain variable (decide on any variable) affect them?
 
-# Action steps
+#### Action steps
 1/ check correlation between speed and depth (e.g. fast high fish, fast low fish, etc.)
 2/ complete module on functional analysis
 
