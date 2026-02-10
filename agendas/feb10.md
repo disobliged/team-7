@@ -46,7 +46,7 @@ MetaCyc vs KEGG
    - Cons: Might find biologically irrelevant patterns, trends might be harder to interpret without context
 
 
-## Group Assignment 2 - Analyses
+## Group 2 Assignment - Analyses
 
 Fill in analysis table:
 
