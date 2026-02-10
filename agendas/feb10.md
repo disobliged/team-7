@@ -44,6 +44,8 @@ MetaCyc vs KEGG
 2. Going in blind (without literature guidance)
    - Pros: Might find new and novel patterns, allowing trends to emerge naturally without inherent bias from previous literature, minimizes bias
    - Cons: Might find biologically irrelevant patterns, trends might be harder to interpret without context
+  
+   - -> Decide which approach to use
 
 
 ## Group 2 Assignment - Analyses
@@ -55,6 +57,7 @@ For each technique, decide:
 - b) Whether each chosen technique typically uses statistics*
 - c) Which aim each chosen technique will contribute to
 - d) How each chosen technique will help you address your research question biologically
+
 
 
 
