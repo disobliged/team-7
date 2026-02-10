@@ -46,6 +46,8 @@ MetaCyc vs KEGG
    - Cons: Might find biologically irrelevant patterns, trends might be harder to interpret without context
   
    - -> Decide which approach to use
+   - PICRUSt good for 16S based functional prediction
+
 
 
 ## Group 2 Assignment - Analyses
