@@ -48,7 +48,7 @@ MetaCyc vs KEGG
    - -> Decide which approach to use
    - PICRUSt good for 16S based functional prediction
 
-
+Zoom link: https://ubc.zoom.us/j/9684360467?pwd=bU5ORnh0Z0I4QkZFVkVkVWRDbDhnUT09
 
 ## Group 2 Assignment - Analyses
 
