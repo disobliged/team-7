@@ -6,12 +6,12 @@ Research Question:
 ### Action Items Recap
 Person|Task       |Done?|
 |:---: |:---:      |:---:|
-|IY    |Code Fix   |[ ]  |
-|IY    |`ggpairs`  |[ ]  |
-|SD    |Graphs     |[ ]  |
-|AL    |Diversity  |[ ]  |
-|VH    |Lit. Review|[ ]  |
-|VX    |Lit. Review|[ ]  |
+|IY    |Code Fix   |[✅]  |
+|IY    |`ggpairs`  |[✅]  |
+|SD    |Graphs     |[✅]  |
+|AL    |Diversity  |[✅]  |
+|VH    |Lit. Review|[✅]  |
+|VX    |Lit. Review|[✅]  |
 
 
 
