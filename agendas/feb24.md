@@ -40,6 +40,7 @@ Research Question:
 ## Proposal Writing 
 
 - Scaffold the proposal timeline
+- Assign roles (ex. Intro & Background, Hypothesis or Prediction, Experimental Aims and Rationale, Proposed Approach, Workflow Overview/Timeline, Participation Report, References)
 
 ### Questions 
 
