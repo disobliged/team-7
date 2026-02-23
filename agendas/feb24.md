@@ -23,7 +23,7 @@ Research Question:
 - For each aim, which parts of the data should we use, how should we group them?
 
 ## Confirm analyses
-- Aim 1: Alpha/beta diversity, spearman correlation 
+- Aim 1: Alpha/Beta diversity, Spearman correlation 
 - Aim 2: Taxonomy bar plot, core microbiome, differential abundance
 - Aim 3: PICRUSt2/ggpicrust
 - Aim 4: Spearman correlation
