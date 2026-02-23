@@ -7,6 +7,7 @@ Research Question:
 
 ## Confirm Aims
 - We have 4 aims drafted:
+  
 - Aim 1: Determining whether hindgut microbiome alpha and beta diversity differ with swimming performance and preferred depth in water, and whether these metrics correlate with fish traits.
 - Aim 2: Identify differences in core hindgut microbiota and differentially abundant taxa across fish of different swimming performance and water depth preference.
 - Aim 3: Determine whether PICRUSt2-predicted energy metabolism pathways are enriched in fish in fast swimmers and distinct water depth preferences.
@@ -16,6 +17,9 @@ Research Question:
 - Are the aims appropriately scoped, sufficiently cover all aspects of the research question, are we missing anything?
 
 ## Filtering 
+- Figure out how to group the data
+
+### Questions
 - For each aim, which parts of the data should we use, how should we group them?
 
 ## Confirm analyses
@@ -28,6 +32,9 @@ Research Question:
 - Are these analyses appropriate?
 
 ## Proposal Writing 
+- Scaffold the proposal timeline
+
+### Questions 
 - Intro/Background: How much detail on fish physiology, swim performance and depth behaviour do we need to include?
 - What else should we include?
 - Should we justify the use of hindgut samples?
