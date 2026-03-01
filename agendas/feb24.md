@@ -42,8 +42,45 @@ Research Question:
 - Scaffold the proposal timeline
 - Assign roles (ex. Intro & Background, Hypothesis or Prediction, Experimental Aims and Rationale, Proposed Approach, Workflow Overview/Timeline, Participation Report, References)
 
+## Overview of Graphs by Aims 
+#### Aim 1 
+- Alpha plots for each swim performance category (5)
+- Alpha plots for each depth category (divide depth by literature or quartiles/tertiles)
+- Beta diversity plot
+
+#### Aim 2
+- Core microbiome analysis as venn diagram 
+- Visualize AncomBC
+- Comparisons to make: either faster or slower vs. generalists
+- Volcano plot
+
+##### Aim3 
+- Same as 2 but filtered for high energy metabolites
+- Fast vs everything else, looking specifically at pathways with energy relevance 
+- *ID the paths of interest on the volcano plot 
+
+#### Aim 4
+- Spearman rank graph
+
 ### Questions 
 
 - Intro/Background: How much detail on fish physiology, swim performance and depth behaviour do we need to include?
 - What else should we include?
 - Should we justify the use of hindgut samples?
+
+### Comments on Aims 
+- Aim 1: addresses a lot of variables, clarify the wording and/or split this aim into separate questions
+- Wording to clarify: "fish traits", "correlate continuous"
+- Aim 3: good phrasing, good specificity for energy metabolism 
+- Change DESeq2 to AncomBC: we are using AncomBC for this course
+- Spearman test: works for depth (continuous variable) but not swimming speeds (categorical) 
+
+
+
+### Additional Meeting Notes
+- It may be helpful to mention in the discussion that this database is biased for specific fish species 
+- For background and justifiction: can reference other papers looking at microbiota & performance in animals
+- Hindgut selection justification: hindgut is the most likely location to find energy metabolites 
+
+
+
