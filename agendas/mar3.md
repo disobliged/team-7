@@ -12,7 +12,7 @@ Research Question:
 - Aim 3: Determine whether PICRUSt2-predicted energy metabolism pathways are enriched in fish in fast swimmers and distinct water depth preferences.
 - Aim 4: Assess whether PICRUSt2-predicted energy metabolism pathways correlate with the taxa identified as differentially abundant.
 
-## Confirm analyses
+## Analyses
 
 - Aim 1: Alpha/Beta diversity, Spearman correlation 
 - Aim 2: Taxonomy bar plot, core microbiome, differential abundance
@@ -28,7 +28,7 @@ Research Question:
 - References: Vanessa
 
 ## Progress?
-- ![MICB 305 Gantt Chart](https://github.com/user-attachments/assets/6877efd0-50b7-4d0e-aa96-4021176a7bf5)
+![MICB 305 Gantt Chart](https://github.com/user-attachments/assets/6877efd0-50b7-4d0e-aa96-4021176a7bf5)
 
 ## Overview of Graphs by Aims (from last time)
 #### Aim 1 
