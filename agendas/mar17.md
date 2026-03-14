@@ -29,7 +29,7 @@ Research Question:
 |Person|Task       |Done?|
 |:---: |:---:      |:---:|
 |IY    |Work on PICRUSt2   |[ ]  |
-|SD    |PICRUSt2 w/ stratification     |[ ]  |
+|SD    |Work on PICRUSt2 w/ stratification     |[ ]  |
 |SD    |Analyze core microbiome analysis     |[ ]  |
 |AL    |Differential Abundance Figure  |[ ]  |
 |VH    |Taxonomy Bar Plot Figure |[ ]  |
