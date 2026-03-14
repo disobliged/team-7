@@ -24,3 +24,13 @@ Research Question:
 ## Core Microbiome 
 
 ## Questions 
+
+### Action Items
+|Person|Task       |Done?|
+|:---: |:---:      |:---:|
+|IY    |PICRUSt2   |[ ]  |
+|SD    |PICRUSt2 w/ stratification     |[ ]  |
+|SD    |Analyze core microbiome analysis     |[ ]  |
+|AL    |Differential Abundance  |[ ]  |
+|VH    |Taxonomy Bar Plot|[ ]  |
+|VX    |Analyze alpha and beta analysis |[ ]  |
