@@ -22,7 +22,7 @@ Research Question:
 ## Alpha and Beta Diversity (Gina)
 
 ## Core Microbiome (Sam)
-
+- Under plots
 ## Questions 
 
 ### Action Items
