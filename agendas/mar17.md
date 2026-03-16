@@ -23,6 +23,7 @@ Research Question:
 
 ## Core Microbiome (Sam)
 
+
 ## Questions 
 
 ### Action Items
@@ -34,3 +35,4 @@ Research Question:
 |AL    |Differential Abundance Figure  |[ ]  |
 |VH    |Taxonomy Bar Plot Figure |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
+|Everyone    |Organize Github|[ ]  |
