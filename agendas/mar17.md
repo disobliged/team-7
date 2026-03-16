@@ -40,7 +40,7 @@ Research Question:
 - Acknowledgements: Sam
 
 ### Notes
-- Work on written analyse/results as you go along (while coding)
+- Work on written analysis/results as you go along (while coding)
 
 ### Action Items
 |Person|Task       |Done?|
