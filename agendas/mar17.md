@@ -22,7 +22,7 @@ Research Question:
 ## Alpha and Beta Diversity (Gina)
 
 ## Core Microbiome (Sam)
-
+plots/fast_v_slow.png
 
 ## Questions 
 
