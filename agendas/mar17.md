@@ -30,7 +30,7 @@ Research Question:
 - Title: Sam
 - Abstract: Vanessa, Sam
 - Introduction: Vanessa, Sam
-- Methods & Materials: Izaak
+- Methods & Materials: Izaak, Everyone
 - Results/Figures/Captions: Everyone
 - Discussion: Gina
 - Limitations: Gina, Vanessa
