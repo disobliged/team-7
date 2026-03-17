@@ -51,5 +51,5 @@ Research Question:
 |AL    |Differential Abundance Figure  |[ ]  |
 |VH    |Taxonomy Bar Plot Figure |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
-|Everyone    |Sign up for Manuscript Roles|[ ]  |
-|Everyone    |Organize Github|[ ]  |
+|Everyone    |Sign up for Manuscript Roles|[X]  |
+|Everyone    |Organize Github|[X]  |
