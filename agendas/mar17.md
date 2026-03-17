@@ -49,7 +49,7 @@ Research Question:
 |SD    |Work on PICRUSt2 w/ stratification     |[ ]  |
 |SD    |Analyze core microbiome analysis     |[ ]  |
 |AL    |Differential Abundance Figure  |[ ]  |
-|VH    |Taxonomy Bar Plot Figure |[ ]  |
+|VH    |Taxonomy Bar Plot Figure, Heatmap |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
 |Everyone    |Sign up for Manuscript Roles|[X]  |
 |Everyone    |Organize Github|[X]  |
