@@ -1,0 +1,26 @@
+INFO Selected: Output dir: picrust_output/intermediate/place_seqs_bac/epa_out/
+INFO Selected: Query file: picrust_output/intermediate/place_seqs_bac/study_seqs_hmmalign.fasta
+INFO Selected: Tree file: /opt/conda/envs/picrust2/lib/python3.9/site-packages/picrust2/default_files/bacteria/bac_ref/bac_ref.tre
+INFO Selected: Reference MSA: picrust_output/intermediate/place_seqs_bac/ref_seqs_hmmalign.fasta
+INFO Selected: Filtering by accumulated threshold: 0.99
+INFO Selected: Maximum number of placements per query: 100
+INFO Selected: Automatic switching of use of per rate scalers
+INFO Selected: Preserving the root of the input tree
+INFO Selected: Specified model file: /opt/conda/envs/picrust2/lib/python3.9/site-packages/picrust2/default_files/bacteria/bac_ref/bac_ref.model
+INFO Selected: Reading queries in chunks of: 5000
+INFO Selected: Using threads: 1
+INFO     ______ ____   ___           _   __ ______
+        / ____// __ \ /   |         / | / // ____/
+       / __/  / /_/ // /| | ______ /  |/ // / __  
+      / /___ / ____// ___ |/_____// /|  // /_/ /  
+     /_____//_/    /_/  |_|      /_/ |_/ \____/ (v0.3.8)
+INFO Using model parameters:
+INFO    Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.408013 (user),  weights&rates: (0.25,0.0178872) (0.25,0.187716) (0.25,0.739808) (0.25,3.05459) 
+        Base frequencies (user): 0.209289 0.232667 0.311531 0.246513 
+        Substitution rates (user): 1.04872 2.92815 1.63887 0.831209 3.68952 1
+INFO Output file: picrust_output/intermediate/place_seqs_bac/epa_out/epa_result.jplace
+INFO 5000 Sequences done!
+INFO 10000 Sequences done!
+INFO 12689 Sequences done!
+INFO Time spent placing: 470s
+INFO Elapsed Time: 473s
