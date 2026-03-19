@@ -12,7 +12,8 @@ Research Question:
 
 - Alpha Diversity: Gina
 - Beta Diversity: Gina
-- Taxonomy Bar Plot: Vanessa 
+- Taxonomy Bar Plot: Vanessa
+- Heat Map: Vanessa
 - Core Microbiome: Sam
 - Differential Abundance: Annabel
 - Volcano Plot: Izaak 
@@ -23,6 +24,7 @@ Research Question:
 
 ## Core Microbiome (Sam)
 - Under plots
+- Fix figure for publication, add only 1 count, adjust limits 
 ## Questions 
 
 ## Manuscript Roles
