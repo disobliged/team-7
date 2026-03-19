@@ -1,4 +1,4 @@
-# Team 7 Meeting #8, March 10th, 2026
+# Team 7 Meeting #8, March 10th, 2026, Minutes by SD
 Research Question:
 > Do fish species and their associated microbial diversity in hindgut samples influence swimming performance and preferred depth in water?
 
