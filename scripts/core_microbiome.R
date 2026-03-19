@@ -14,7 +14,7 @@ ps = readRDS('ps_filtered.rds')
 ps = transform(ps, 'compositional')
 ps_genus = tax_glom(ps, 'Genus')
 
-# Subset your phyloseq object by swim performane group
+# Subset your phyloseq object by swim performance group
 performance.fast = subset_samples(ps_genus_final, swim_performance %in% c('accelerator', 'crusier sprinter', 'manoeuvrer'))
 performance.slow = subset_samples(ps_genus_final, swim_performance %in% c('flow refuging', 'burrowing'))
 performance.moderate = subset_samples(ps_genus_final, swim_performance == 'generalist')
