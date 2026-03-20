@@ -1,2 +1,6 @@
 datasets/picrust_output/intermediate/place_seqs_bac/query_align.stockholm filter=lfs diff=lfs merge=lfs -text
 /datasets/picrust_output/intermediate/place_seqs_bac/query_align.stockholm filter=lfs diff=lfs merge=lfs -text
+/datasets/picrust_strat_output/EC_metagenome_out/pred_metagenome_contrib.tsv.gz filter=lfs diff=lfs merge=lfs -text
+/datasets/picrust_strat_output/KO_metagenome_out/pred_metagenome_contrib.tsv.gz filter=lfs diff=lfs merge=lfs -text
+/datasets/picrust_strat_output/intermediate/place_seqs_bac/query_align.stockholm filter=lfs diff=lfs merge=lfs -text
+/datasets/picrust_strat_output/pathways_out/path_abun_contrib.tsv.gz filter=lfs diff=lfs merge=lfs -text
