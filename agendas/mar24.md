@@ -37,9 +37,8 @@ Research Question:
 - Contributions: Sam
 - Acknowledgements: Sam
 
-- Can anyone else take on other Manuscript Roles? (ex. Discussion)
-
 ### Notes
+- Can anyone else take on other Manuscript Roles? (ex. Discussion)
 - Work on written analysis/results as you go along (while coding)
 - Make a colour palette for our figures, and assign colours for certain groups and/or objects #consistency
 - Document methods + results as you go along, so people in charge of writing that portion will have an easier time writing
