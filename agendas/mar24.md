@@ -23,6 +23,10 @@ Research Question:
 - PICRUSt2: Izaak 
 - PICRUSt2 w/ stratification: Sam
 
+## Presentation 
+- Which analyses should we include in the presentation (i.e. which seem relevant/easier to explain)
+- Action item: finish a draft of the figures needed and make the presentation slides 
+
 ## Manuscript Roles
 
 - Title: Sam
@@ -51,5 +55,6 @@ Research Question:
 |AL    |Differential Abundance Figure  |[ ]  |
 |VH    |Taxonomy Bar Plot Figure, Heatmap |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
+|Everyone    |Draft Presentation Slides|[ ]  |
 |Everyone    |Sign up for more Manuscript Roles|[ ]  |
 |Everyone    |Organize Github|[ ]  |
