@@ -52,7 +52,7 @@ Research Question:
 ### Action Items
 |Person|Task       |Done?|
 |:---: |:---:      |:---:|
-|IY    |Work on PICRUSt2   |[ ]  |
+|IY    |Work on PICRUSt2 figure / boxplots  |[ ]  |
 |IY/AL    |Volcano Plot   |[ ]  |
 |SD    |Work on PICRUSt2 w/ stratification figure    |[ ]  |
 |VH    |Fix Taxonomy Bar Plot Figure |[ ]  |
