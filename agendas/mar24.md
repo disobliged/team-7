@@ -37,7 +37,7 @@ Research Question:
 - Discussion: Gina
 - Limitations: Gina, Vanessa
 - Conclusion: Everyone, but one person writes to be cohesive
-- Future Directions:
+- Future Directions: Sam
 - Contributions: Sam
 - Acknowledgements: Sam
 
