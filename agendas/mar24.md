@@ -32,7 +32,7 @@ Research Question:
 ## Manuscript Roles
 
 - Title: Sam
-- Abstract: Vanessa, Sam
+- Abstract: Vanessa, Sam -> submit abstract by apr 5 for urs
 - Introduction: Vanessa, Sam
 - Methods & Materials: Izaak, Sam, Everyone
 - Results/Figures/Captions: Everyone
