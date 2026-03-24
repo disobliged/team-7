@@ -55,7 +55,7 @@ Research Question:
 |IY    |Work on PICRUSt2   |[ ]  |
 |IY/AL    |Volcano Plot   |[ ]  |
 |SD    |Work on PICRUSt2 w/ stratification figure    |[ ]  |
-|VH    |Taxonomy Bar Plot Figure |[ ]  |
+|VH    |Fix Taxonomy Bar Plot Figure |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
 |Everyone    |Draft Presentation Slides + Overview|[ ]  |
 |Everyone    |Sign up for more Manuscript Roles, being drafting!|[ ]  |
