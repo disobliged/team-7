@@ -24,8 +24,9 @@ Research Question:
 - PICRUSt2 w/ stratification: Sam
 
 ## Presentation 
-- Which analyses should we include in the presentation (i.e. which seem relevant/easier to explain)
-- Action item: finish a draft of the figures needed and make the presentation slides 
+- Presentations are in t-2 weeks! Let's draft our presentation slides + a brief overview of what we will say 
+- Which analyses should we include in the presentation (i.e. which seem relevant/easier to explain) - let's narrow it down to 2-3 important slides + easy to explain methodology 
+- **Action item**: finish a draft of the figures (publication-ready) needed and make the presentation slides, assign roles for slides 
 
 ## Manuscript Roles
 
@@ -55,6 +56,6 @@ Research Question:
 |SD    |Work on PICRUSt2 w/ stratification figure    |[ ]  |
 |VH    |Taxonomy Bar Plot Figure |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
-|Everyone    |Draft Presentation Slides|[ ]  |
+|Everyone    |Draft Presentation Slides + Overview|[ ]  |
 |Everyone    |Sign up for more Manuscript Roles|[ ]  |
 |Everyone    |Organize Github|[ ]  |
