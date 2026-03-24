@@ -75,11 +75,3 @@ contributors_only <- taxa_pathway_counts_2 %>%
 # See how many unique taxa are left 
 unique_taxa_count <- length(unique(contributors_only$Taxon))
 unique_taxa_count
-
-pathway_taxa_count <- ggplot(contributors_only, aes(x = Taxon, y = n_pathways)) +
-  geom_col(fill = "red") +
-  theme_classic() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
-  ylab("Number of Contributing Taxa") + 
-  xlab ("Taxa Name") + 
-  ggtitle("Number of Taxa Contributing to Each Metabolic Pathway")
