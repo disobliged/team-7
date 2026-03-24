@@ -12,6 +12,9 @@ Research Question:
 - Aim 3: Determine whether PICRUSt2-predicted energy metabolism pathways are enriched in fish in fast swimmers and distinct water depth preferences.
 - Aim 4: Assess whether PICRUSt2-predicted energy metabolism pathways correlate with the taxa identified as differentially abundant.
 
+### Notes 
+- Be more specific and clarify Aim 1, get rid of the water depth for the aims. Figure out other ways to do Aim 4, with a back-up option, in case Aim 2 does not work out.
+  
 ## Analyses
 
 - Aim 1: Alpha/Beta diversity, Spearman correlation 
@@ -51,6 +54,9 @@ Delegate who does what (spin the wheel (?))
 
 #### Aim 4
 - Spearman rank graph
+
+### Notes 
+- Don't use spearman
 
 ## Questions 
 
