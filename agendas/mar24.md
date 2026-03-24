@@ -58,5 +58,5 @@ Research Question:
 |VH    |Taxonomy Bar Plot Figure |[ ]  |
 |VX    |Analyze alpha and beta analysis |[ ]  |
 |Everyone    |Draft Presentation Slides + Overview|[ ]  |
-|Everyone    |Sign up for more Manuscript Roles|[ ]  |
+|Everyone    |Sign up for more Manuscript Roles, being drafting!|[ ]  |
 |Everyone    |Organize Github|[ ]  |
