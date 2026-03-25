@@ -36,7 +36,7 @@ Research Question:
 - Fix taxonomy bar plot -> Filter in R and look at differential abundance
 - Pi crust analysis is still in progress
 - Alpha diversity plot: Significance between Burrowing and Flow refuging groups (slow group), no significance between slow and fast groups
-- Beta diversity results are looking more promising, significance between 
+- Beta diversity results are looking more promising, flow refuging and accelerator fish were most dissimilar
 - Core microbiome plot: slow group was more abundant -> The microbes linked to the slow group were found in higher numbers compared to other groups
 - Explore energy producting pathways; there may be several ways to explain findings -> for example fermentation pathways may be more prevalent among slow fish, whereas fish requiring more oxygen may be associated with faster swimming fish
 - For the presentation slides, use unique colours! Not the default ones built into R (ideally a palette that's colour blind friendly)
