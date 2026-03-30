@@ -8,6 +8,12 @@ Research Question:
 - Figure out figures for manuscript 
 - Discuss other analyses if time permits
 
+## Help Needed
+Alpha Diversity
+- If else statement not working
+Picrust2
+- Annotations not working
+
 ## Analyses
 
 - Alpha Diversity: Gina
