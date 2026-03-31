@@ -2,11 +2,15 @@
 Research Question:
 > Does hindgut microbial diversity, core microbiota, differentially abundant taxa and energy metabolic pathways correlate with swimming performance across fish species?
 
-## Oral Presentation Draft 
+## Oral Presentation Draft, Minutes by SD 
 
 - Dry run-through of presentation: link - https://ubcca-my.sharepoint.com/:p:/g/personal/sdonato_student_ubc_ca/IQCOgjBtzPunSJJTqoFcqGUzAf_SdSYsQhyh50KbGSXo9sA?e=tx4LXQ
 - Figure out figures for manuscript 
 - Discuss other analyses if time permits
+
+### Notes 
+- Comments made in presentation link
+- Reducing text, adding more graphics, adding more biological significance 
 
 ## Help Needed
 Alpha Diversity
@@ -45,6 +49,21 @@ Picrust2
 - Work on written analysis/results as you go along (while coding)
 - Colour palette: orange, purple, pink 
 - Document methods + results as you go along, so people in charge of writing that portion will have an easier time writing
+
+### Manuscript Figures 
+Figure 1: Diversity: 
+•	Bray-curtis and shannon
+•	Add sensitivity, jaccard/Chao1
+•	Taxonomy bar plot
+Figure 2: Core microbiome
+•	3 circle one
+Figure 3/Table 1: taxonomic differential abundance
+Figure 4: picrust2
+•	PCA plot
+•	Maybe a bar plot
+•	Supplementary, volcano plot
+Figure 5: functional bar plot
+
 
 ### Action Items
 |Person|Task       |Done?|
