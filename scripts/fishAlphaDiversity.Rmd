@@ -183,7 +183,7 @@ The code above gives us a raw alpha diversity plot; ```fishCompare``` gives us a
 #   )
 
 cleanAlphaFish<-fishFormatted+
-  scale_fill_manual(values=c('#fcba65','#E07A9A','#8E7CA6'))
+  scale_fill_manual(values=c('#8E7CA6','#E07A9A','#fcba65'))
 cleanAlphaFish
 ```
 Now that we have a clean figure, we can export it as a ```.jpg```.
