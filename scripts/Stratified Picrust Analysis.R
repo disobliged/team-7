@@ -21,6 +21,7 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 library(phyloseq)
+library(readxl)
 
 # Define Pathways of interest
 energy_pathways <- c(
@@ -43,11 +44,26 @@ energy_pathways <- c(
 #   CURRENTLY FAMILY LEVEL
 # * Convert to relative abundance to control for sequencing depth
 
-# Load stratified pathway contribution data (MetaCyc used for this example)
+# Load Fish Metadata 
+metadata <- read_excel("fish_metadata_2.xlsx")
+
+# Load stratified pathway contribution data (MetaCyc used)
 strat_mc_data_1 <- data.table::fread("path_abun_contrib.tsv")
 
+# Rename column name from #SampleID to sample 
+metadata <- metadata %>%
+  rename(sample = `#SampleID`)
+
+# Left join sample names from metadata to stratified MetaCyc data
+strat_mc_data_1 <- data.table::fread("path_abun_contrib.tsv") %>%
+  left_join(metadata, by = "sample")
+
+# Filter for hindgut samples
+strat_hindgut <- strat_mc_data_1 %>%
+  filter(sample_type == "hindgut")
+
 # Convert reads per sample to relative abundance to control for sequencing depth
-strat_rel = strat_mc_data_1 %>% 
+strat_rel = strat_hindgut %>% 
   group_by(sample) %>%
   mutate(rel_abun = taxon_function_abun/sum(taxon_function_abun)) %>%
   ungroup()
