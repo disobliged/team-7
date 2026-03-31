@@ -51,18 +51,18 @@ Picrust2
 - Document methods + results as you go along, so people in charge of writing that portion will have an easier time writing
 
 ### Manuscript Figures 
-Figure 1: Diversity: 
+- Figure 1: Diversity: 
 •	Bray-curtis and shannon
 •	Add sensitivity, jaccard/Chao1
 •	Taxonomy bar plot
-Figure 2: Core microbiome
+- Figure 2: Core microbiome
 •	3 circle one
-Figure 3/Table 1: taxonomic differential abundance
-Figure 4: picrust2
+- Figure 3/Table 1: taxonomic differential abundance
+- Figure 4: picrust2
 •	PCA plot
 •	Maybe a bar plot
 •	Supplementary, volcano plot
-Figure 5: functional bar plot
+- Figure 5: functional bar plot
 
 
 ### Action Items
