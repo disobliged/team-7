@@ -54,8 +54,9 @@ ggsave("moderate_v_slow.png", moderate_v_slow)
 
 fast_v_moderate_v_slow <- ggVennDiagram(list(ASVs_fast, ASVs_moderate, ASVs_slow), 
               set_side = 6, 
-              category.names = c('Fast', 'Moderate', 'Slow'))
-ggsave("fast_v_moderate_v_slow.png", fast_v_moderate_v_slow)
+              category.names = c('Fast', 'Moderate', 'Slow')) +
+          scale_fill_gradient(low = "#a584d1", high = "#fcba65", limits = c(3, 70))
+ggsave("fast_v_moderate_v_slow.jpg", fast_v_moderate_v_slow)
 
 
 # View the ASVs
