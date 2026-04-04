@@ -4,24 +4,31 @@ library(phyloseq)
 library(vegan)
 
 #loading ps
-ps = readRDS('../datasets/ps_filtered.rds') # TODO adjust file path
-
-
-### Sorting fish speeds into Fast, Moderate, and Slow
+ps = readRDS('../datasets/ps_filtered.rds') # TODO check file path
 
 # Subset hindgut samples 
 hindgut = subset_samples(ps, sample_type == "hindgut")
 
+### Remove obvious outliers ###
+# 1/ 13414.100.hg.R1.fastq.gz has MDS1 of -8542.9979 when included
+# 2/ 13414.34.hg.R1.fastq.gz has MDS2 of -3.4208732669 when included
+
+# mds_data_rm_outliers = mds_data %>% 
+#   filter(Row.names != "13414.100.hg.R1.fastq.gz") %>%
+#   filter(Row.names != "13414.34.hg.R1.fastq.gz")
+
+to_remove <- c("13414.100.hg.R1.fastq.gz", "13414.34.hg.R1.fastq.gz")
+# ps <- subset_samples(ps, !(SampleID %in% to_remove))
+ps <- prune_samples(!(sample_names(ps) %in% to_remove), ps)
 
 
-# rarefying data:
+
+# rarefying data
 psrare = hindgut %>% rarefy_even_depth(sample.size = 2525, rngseed = 1)
 # sample depth selected from alpha diversity
 
 
-
-
-# calculating metrics (bray-curtis)
+## Calculating metrics (bray-curtis) ##
 ps_bray = phyloseq::distance(psrare, method = "bray") #distance object
 View(as.matrix(ps_bray)) # for human interpretation
 
@@ -39,8 +46,9 @@ mds_data = mds$points %>% as.data.frame %>%
                             ifelse(swim_performance %in% c('generalist'), 'moderate', 'fast')), .before = swim_performance)
 
 
+
 # Plotting
-p = mds_data %>%
+p = mds_data_rm_outliers %>%
   ggplot(aes(MDS1,MDS2,color = speed_category)) + 
   geom_point() + #scatterplot 
   stat_ellipse() + # 95% confidence interval around median
@@ -51,18 +59,18 @@ p = mds_data %>%
                                 "slow" = "#fcba65")) #colour palette
 p
 
-# log scale x for human interpretability
-p_logx = mds_data %>%
-  ggplot(aes(MDS1,MDS2,color = speed_category)) + 
-  geom_point() + #scatterplot 
-  stat_ellipse() + # 95% confidence interval around median
-  labs(color = "Speed") +
-  theme_classic(base_size=18) +
-  scale_x_log10() +
-  scale_color_manual(values = c("fast" = "#8E7CA6", 
-                                "moderate" = "#E07A9A", 
-                                "slow" = "#fcba65")) #colour palette
-p_logx
+# # log scale x for human interpretability
+# p_logx = mds_data_rm_outliers %>%
+#   ggplot(aes(MDS1,MDS2,color = speed_category)) + 
+#   geom_point() + #scatterplot 
+#   stat_ellipse() + # 95% confidence interval around median
+#   labs(color = "Speed") +
+#   theme_classic(base_size=18) +
+#   scale_x_log10() +
+#   scale_color_manual(values = c("fast" = "#8E7CA6", 
+#                                 "moderate" = "#E07A9A", 
+#                                 "slow" = "#fcba65")) #colour palette
+# p_logx
 
 
 
@@ -164,8 +172,6 @@ stats_clean = stats %>% rename(Pval = `Pr(>F)`) %>% #renaming column to Pval
   filter(!is.na(Pval)) # Removing irrelevant lines
 
 stats_clean # swim_performance seems to be significant
-
-
 
 
 
