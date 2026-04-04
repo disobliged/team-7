@@ -52,7 +52,7 @@ p = mds_data_rm_outliers %>%
   ggplot(aes(MDS1,MDS2,color = speed_category)) + 
   geom_point() + #scatterplot 
   stat_ellipse() + # 95% confidence interval around median
-  labs(color = "Speed") +
+  labs(color = "Swim Performance") +
   theme_classic(base_size=18) +
   scale_color_manual(values = c("fast" = "#8E7CA6", 
                                 "moderate" = "#E07A9A", 
