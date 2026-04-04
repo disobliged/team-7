@@ -21,7 +21,7 @@ Input and convert the ```phyloseq_taxonomy.rds``` sample data into a data frame 
 meta = readRDS('../datasets/ps_filtered.rds') %>% .@sam_data %>% data.frame() %>% 
   rownames_to_column('sample_name')
 
-ko = read_delim('../datasets/picrust_output/EC_metagenome_out/pred_metagenome_unstrat.tsv/pred_metagenome_unstrat.tsv')
+ko = read_delim('../datasets/picrust_output/KO_metagenome_out/pred_metagenome_unstrat.tsv')
 ```
 
 
@@ -30,23 +30,32 @@ ko = read_delim('../datasets/picrust_output/EC_metagenome_out/pred_metagenome_un
 ```{r DAA}
 # Rename the ko value so the first column is rownames
 ?column_to_rownames
-ko = column_to_rownames(read_delim('../datasets/picrust_output/KO_metagenome_out/pred_metagenome_unstrat.tsv'), var = 'function')
-## CHECK Unneccessary?
+# ko = column_to_rownames(read_delim('../datasets/picrust_output/KO_metagenome_out/pred_metagenome_unstrat.tsv'), var = 'function')
 
 ?str_remove
+?all_of
 # Filter to only compare hindgut microbiome
 ### HELP ###
 hindgut = meta %>% filter(sample_type %in% c('hindgut'))
-ko_filt = ko %>% select(all_of(hindgut$sample_name))
-## Works without these on windows?
-  # mutate(feature = sapply(.$feature, function(x) str_split(x,':') %>% 
-  #                           .[[1]] %>% 
-  #                           .[2]
-  #   )
-  #   )
-# sapply(ko_filt$feature, function(x) str_remove(x,'ko:') %>% unlist())
+ko_filt = select(ko,`function`) %>% 
+  mutate(`function` = sapply(.$`function`, function(x) str_split(x,'ko:') %>%
+                            .[[1]] %>%
+                            .[2])
+    )
+ko_filt
+
+# ko_names=column_to_rownames(ko_filt, var = 'function')
+# ko_names
+?merge
+?add_column
+ko_joined = add_column(ko, ko_filt$`function`)
+ko_named = column_to_rownames(ko_joined, var = 'ko_filt$`function`')
+ko_selected = select(ko_named, -`function`)
+
+# sapply(ko$`function, function(x) str_remove(x,'ko:') %>% unlist())
+
 # Perform pathway differential abundance analysis (DAA) using LinDA method
-daa_results_df = pathway_daa(abundance = ko,
+daa_results_df = pathway_daa(abundance = ko_selected,
                              metadata = hindgut, 
                              group = "swim_performance", 
                              daa_method = "LinDA", 
