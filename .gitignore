@@ -5,3 +5,4 @@ datasets/picrust_strat_output/intermediate/pathways/regrouped_infile.tsv
 scripts/volcanoPlot.nb.html
 datasets/picrust_output/KO_metagenome_out/pred_metagenome_unstrat.tsv/pred_metagenome_unstrat.tsv
 datasets/picrust_output/EC_metagenome_out/pred_metagenome_unstrat.tsv/pred_metagenome_unstrat.tsv
+scripts/.RDataTmp
