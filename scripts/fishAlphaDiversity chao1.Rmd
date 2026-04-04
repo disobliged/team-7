@@ -97,7 +97,7 @@ fishFormatted = grouped %>%
   geom_jitter(height = 0,width = 0.2)+
   theme_classic(base_size = 18)+
   facet_wrap(~variable,ncol=7,scales = 'free_y')+
-  ylab('Alpha Diversity')+
+  ylab('Chao1 Alpha Diversity')+
   xlab(NULL)+
   theme(axis.text.x = element_text(angle = 45,vjust=1,hjust=1))+
   labs(fill='Swim Performance')

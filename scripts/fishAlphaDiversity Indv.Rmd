@@ -78,7 +78,7 @@ fishFormatted = pData %>%
   geom_jitter(height = 0,width = 0.2)+
   theme_classic(base_size = 18)+
   facet_wrap(~variable,ncol=7,scales = 'free_y')+
-  ylab('Alpha Diversity')+
+  ylab('Shannon Alpha Diversity')+
   xlab(NULL)+
   theme(axis.text.x = element_text(angle = 45,vjust=1,hjust=1))+
   labs(fill='Swim Performance')
@@ -118,18 +118,6 @@ The code above gives us a raw alpha diversity plot; ```fishCompare``` gives us a
 # Add on to fishFormatted from fishCompare
 
 cleanAlphaFish<-fishFormatted+
-  ylim(0,6.75)+
-  geom_signif(
-    comparison = list(
-      c('burrowing','flow refuging')),
-    y_position = c(
-      5.5
-    ),
-    annotations = c(
-      '*'
-    ),
-    textsize = 16
-  )+
   scale_x_discrete(labels=
     c(
       'Accelerator',
