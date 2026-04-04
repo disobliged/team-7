@@ -18,7 +18,7 @@ This pipeline will be a complex analysis of the Picrust output we did on the cla
 Input and convert the ```phyloseq_taxonomy.rds``` sample data into a data frame and move the ```fastq``` sample IDs into a column. Then import the ```path_abun_unstrat.tsv``` file.
 
 ```{r Import Data}
-meta = readRDS('ps_filtered.rds') %>% .@sam_data %>% data.frame() %>% 
+meta = readRDS('../datasets/ps_filtered.rds') %>% .@sam_data %>% data.frame() %>% 
   rownames_to_column('sample_name')
 
 metacyc = read_delim('path_abun_unstrat.tsv')
