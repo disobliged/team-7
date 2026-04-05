@@ -63,7 +63,7 @@ p_bray = mds_data_bray %>%
   geom_point() + #scatterplot 
   stat_ellipse() + # 95% confidence interval around median
   labs(color = "Swim Performance") +
-  theme_classic(base_size=18) +
+  theme_classic(base_size=16) +
   scale_color_manual(values = c("fast" = "#8E7CA6", 
                                 "moderate" = "#E07A9A", 
                                 "slow" = "#fcba65")) #colour palette
@@ -75,7 +75,7 @@ p_jaccard = mds_data_jaccard %>%
   geom_point() + 
   stat_ellipse() + 
   labs(color = "Swim Performance") +
-  theme_classic(base_size=18) +
+  theme_classic(base_size=16) +
   scale_color_manual(values = c("fast" = "#8E7CA6", 
                                 "moderate" = "#E07A9A", 
                                 "slow" = "#fcba65")) #colour palette
