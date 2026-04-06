@@ -173,10 +173,10 @@ picrust2_pipeline.py \
 ### Stratified PICRUSt2 Analysis
 ```
 picrust2_pipeline.py \
--s rep_seqs.fasta \
--i table.biom \
--o picrust_strat_output \
---stratified # The stratified flag is appended to the command for the stratified analysis to run
+-s picrust/dna-sequences.fasta \
+-i picrust/feature-table.biom \
+--stratified \ # The stratified flag is appended to the command for the stratified analysis to run
+-o picrust_strat_output
 ```
 
 ## References
