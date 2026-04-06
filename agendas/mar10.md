@@ -5,7 +5,6 @@ Research Question:
 ## Proposal Draft, Minutes by SD
 
 - Look over and edit draft
-- https://docs.google.com/document/d/1rYw7mJek6bC_Kb5gS4utx9n5gF_yXJwqq8-bVf8vcrg/edit?usp=sharing
 
 ## Proposal Writing 
 - Intro & Background: Gina, Annabel, Vanessa
