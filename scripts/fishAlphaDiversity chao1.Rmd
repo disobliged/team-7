@@ -53,7 +53,7 @@ table(sample_sums(psRare))
 # Sort data into Fast, Moderate, and Slow
 
 # Filter to hindgut samples only 
-hindgut = subset_samples(ps, sample_type == "hindgut")
+hindgut = subset_samples(psRare, sample_type == "hindgut")
 
 ```
 With the rarefied data, we can now calculate alpha diversity (Shannon) and Wilcoxon's test.
