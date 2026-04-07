@@ -4,7 +4,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![sponsors](https://img.shields.io/opencollective/sponsors/0?color=t&label=Generous%20Sponsors)
 ## Research Question
-> Does hindgut microbial diversity, core microbiota, differentially abundant taxa and energy metabolic pathways correlate with swimming performance across fish species?
+> Does hindgut microbial diversity, core microbiota, differentially abundant taxa and predicted energy metabolic pathways correlate with swimming performance across fish species?
 ## Open Source
 The project's dataset is open access and can be found here (Insert link)
 In an effort to keep research accessible, the project's code is licensed under the GPL v3 license. This is done so the code will always be free and accessible for future reference.
