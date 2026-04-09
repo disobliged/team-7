@@ -23,13 +23,17 @@ Research Question:
 ## Alpha and Beta Diversity (Gina)
 
 ### Notes
-- Gave Gina phyloseq object to do alpha and beta analyses 
+- Gave Gina phyloseq object to do alpha and beta analyses, due to QIIME2 issues
+- Possible change in rarefaction
 
 ## Core Microbiome (Sam)
 - Under plots
 
 ### Notes
-- Fix figure for publication, add only 1 count, adjust limits 
+- Fix figure for publication, add only 1 count, adjust limits
+- Remove titles on figures
+- Create a colour pallette, don't use base R colours
+- Make sure text is big enough
 
 ## Manuscript Roles
 
@@ -47,6 +51,7 @@ Research Question:
 
 ### Notes
 - Work on written analysis/results as you go along (while coding)
+- Assigned action items, split up work equally during the meeting 
 
 ### Action Items
 |Person|Task       |Done?|
