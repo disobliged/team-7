@@ -28,27 +28,17 @@ ko = read_delim('../datasets/picrust_output/KO_metagenome_out/pred_metagenome_un
 ## Run the Pipeline
 
 ```{r DAA}
-# Rename the ko value so the first column is rownames
-?column_to_rownames
-# ko = column_to_rownames(read_delim('../datasets/picrust_output/KO_metagenome_out/pred_metagenome_unstrat.tsv'), var = 'function')
-
-?str_remove
-?all_of
 # Filter to only compare hindgut microbiome
-### HELP ###
 hindgut = meta %>% filter(sample_type %in% c('hindgut'))
 ko_filt = select(ko,`function`) %>% 
   mutate(`function` = sapply(.$`function`, function(x) str_split(x,'ko:') %>%
                             .[[1]] %>%
                             .[2])
     )
-ko_filt
 
-# ko_names=column_to_rownames(ko_filt, var = 'function')
-# ko_names
-?merge
-?add_column
 ko_joined = add_column(ko, ko_filt$`function`)
+
+# Rename the ko value so the first column is rownames
 ko_named = column_to_rownames(ko_joined, var = 'ko_filt$`function`')
 ko_selected = select(ko_named, -`function`)
 
@@ -62,6 +52,8 @@ daa_results_df = pathway_daa(abundance = ko_selected,
                              select = NULL, reference = NULL)
 
 saveRDS(daa_results_df, '../datasets/fish_daa_results_df.rds')
+
+daa_results_df = readRDS('../datasets/fish_daa_results_df.rds')
 ```
 
 ## Convert KO to KEGG
@@ -85,7 +77,7 @@ source('ggpicrust2_errorbar_function_fixed.R')
 
 daa_annotated_results_df %>% filter(p_adjust< 5e-11, abs(log2_fold_change) > 5) %>% nrow()
 
-peb = pathway_errorbar_fixed(abundance = ko_named, 
+peb = pathway_errorbar_fixed(abundance = ko_selected, 
                      daa_results_df = daa_annotated_results_df, 
                      Group = hindgut$swim_performance, 
                      wrap_label = T, wraplength=60,
