@@ -12,7 +12,7 @@ library(readxl)
 library(Maaslin2)
 
 # Load object
-ps = readRDS('../datasets/ps_filtered.rds')
+ps = readRDS('datasets/ps_filtered.rds')
 
 # Tax_glom if desired. DON'T rarefy or use a compositional transformation!
 ps_glom = tax_glom(ps, 'Genus')
