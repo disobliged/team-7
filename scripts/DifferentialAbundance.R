@@ -66,3 +66,7 @@ tax <- read_tsv("data_taxonomy.tsv")
 
 merged_maaslin <- maaslin_results %>%
   left_join(tax, by = c("feature" = "Feature ID"))
+
+volcano_diff_abundance <- ggplot(data = merged_maaslin, aes(x = log2fc, y = -log10(pval))) +
+         geom_point(size = 3)
+
