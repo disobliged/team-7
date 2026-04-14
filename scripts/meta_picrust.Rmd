@@ -23,6 +23,23 @@ meta = readRDS('../datasets/ps_filtered.rds') %>% .@sam_data %>% data.frame() %>
 
 metacyc = read_delim('../datasets/picrust_output/pathways_out/path_abun_unstrat.tsv')
 ```
+```{r Group}
+fast = c('accelerator','crusier sprinter','manoeuvrer')
+meta = meta %>%
+  mutate(swim_group = ifelse(swim_performance %in% fast,
+                      'Fast',
+                      ifelse(swim_performance == 'generalist',
+                      'Moderate',
+                      'Slow'
+                      )
+  ),
+  .after = swim_performance
+  )
+# meta_fast_slow = meta %>% 
+#   filter(
+#     swim_group == c('Fast','Slow')
+#   )
+```
 
 
 ## Run the Pipeline
@@ -30,26 +47,23 @@ metacyc = read_delim('../datasets/picrust_output/pathways_out/path_abun_unstrat.
 ```{r DAA}
 
 # 1. Subset metadata to hindgut only
-hindgut <- meta %>% filter(sample_type == "hindgut")
+hindgut <- meta_fast_slow %>% filter(sample_type == "hindgut")
 
 # 2. Keep only hindgut samples that actually exist in MetaCyc
 valid_samples <- intersect(hindgut$sample_name, colnames(metacyc))
 
+# valid_samples = metacyc [
+#   ,hindgut$sample_name
+# ]
+
 # 3. Filter MetaCyc to those samples
-metacyc_filt <- metacyc %>%
-  column_to_rownames("pathway") %>%
-  select(all_of(valid_samples))
+metacyc_filt <- metacyc %>% 
+  select(pathway,all_of(valid_samples)) %>% 
+  column_to_rownames("pathway")
 
-# 4. Also update hindgut metadata to match
-hindgut <- hindgut %>% filter(sample_name %in% valid_samples)
-
-#draft-- Filter to only compare hindgut microbiome
-hindgut = meta %>% filter(sample_type %in% c('hindgut'))
-metacyc_filt = metacyc %>% select(all_of(hindgut$sample_name))
-
-metacyc_filt <- metacyc %>%
-  column_to_rownames("pathway") %>%      
-  select(all_of(meta$sample_name))       
+valid_samples = metacyc [
+  ,hindgut$sample_name
+]
 
 # Perform pathway differential abundance analysis (DAA) using LinDA method
 daa_results_df = pathway_daa(abundance = metacyc_filt,
@@ -66,13 +80,13 @@ saveRDS(daa_results_df, 'meta_fish_daa_results_df.rds')
 ```{r}
 # Annotate pathway results using MetaCyc
 
-daa_annotated_results_df = pathway_annotation(pathway = "MetaCyc",
-                                              daa_results_df = daa_results_df,
-                                              ko_to_kegg = FALSE)
+# daa_annotated_results_df = pathway_annotation(pathway = "MetaCyc",
+#                                               daa_results_df = daa_results_df,
+#                                               ko_to_kegg = FALSE)
+# 
+# saveRDS(daa_annotated_results_df,'fish_daa_annotated_results_df.rds')
 
-saveRDS(daa_annotated_results_df,'fish_daa_annotated_results_df.rds')
-
-#daa_annotated_results_df<-readRDS(daa_annotated_results_df,'fish_daa_annotated_results_df.rds')
+daa_annotated_results_df<-readRDS(daa_annotated_results_df,'fish_daa_annotated_results_df.rds')
 ```
 
 
@@ -193,7 +207,7 @@ hindgut1 <- hindgut %>%
       TRUE ~ NA_character_
     )
   )
-
+?pathway_pca
 pca = pathway_pca(abundance = metacyc_filt,
             metadata = hindgut1,
             group = "Swim_Performance",
