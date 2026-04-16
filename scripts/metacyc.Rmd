@@ -124,6 +124,9 @@ volcano_meta = ggplot(data = daa_annotated_results_df, aes(x=log2FoldChange, y =
   ylim(NA,2)+
   theme(legend.position='none')
 volcano_meta
+ggsave('../plots/meta_volcano.jpg',
+       plot = pca,
+       height=8.5, width = 14)
 ```
 
 
