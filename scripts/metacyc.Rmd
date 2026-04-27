@@ -82,9 +82,9 @@ daa_annotated_results_df = pathway_annotation(pathway = "MetaCyc",
                                               daa_results_df = daa_results_df,
                                               ko_to_kegg = FALSE)
 
-saveRDS(daa_annotated_results_df,'../datasets/fish_daa_meta_annotated_results_df.rds')
+saveRDS(daa_annotated_results_df,'../datasets/fish_daa_meta_pathway_annotation_results_df.rds')
 
-# daa_annotated_results_df<-readRDS('../datasets/fish_daa_meta_annotated_results_df.rds')
+# daa_annotated_results_df<-readRDS('../datasets/fish_daa_meta_pathway_annotation_results_df.rds')
 ```
 
 ```{r Box Plot}
@@ -138,10 +138,6 @@ volcano_meta = ggplot(data = daa_annotated_results_df, aes(x=log2FoldChange, y =
   labs(x=TeX('$Log_2$ Fold Change'), y=TeX('$-Log_{10}$ P-Adjusted Value'))
 volcano_meta
 
-ggsave('../plots/meta_volcano.jpg',
-       plot = volcano_meta,
-       height=8.5, width = 14)
-
 volcano_meta_labelled = volcano_meta+
     geom_text(
     aes(
@@ -155,6 +151,7 @@ volcano_meta_labelled = volcano_meta+
     hjust = -0.05,
     vjust = -0.5
   )
+volcano_meta_labelled
 
 ggsave('../plots/meta_volcano_labelled.jpg',
        plot = volcano_meta_labelled,

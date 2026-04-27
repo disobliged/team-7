@@ -8,7 +8,7 @@ library(microbiome)
 library(ggVennDiagram)
 
 # Load object/data
-ps = readRDS('datasets/ps_filtered.rds')
+ps = readRDS('../datasets/ps_filtered.rds')
 
 
 # Core Microbiome Analysis
@@ -35,20 +35,20 @@ ASVs_moderate = core_members(performance.moderate, detection=0.001, prevalence =
 fast_v_slow <- ggVennDiagram(list(ASVs_fast, ASVs_slow),
               set_size = 6,
               category.names = c('Fast','Slow') )
-ggsave("fast_v_slow.png", fast_v_slow)
+ggsave("../plots/archive/fast_v_slow.png", fast_v_slow)
 
 # Fast vs. Moderate
 fast_v_moderate <- ggVennDiagram(list(ASVs_fast, ASVs_moderate), 
                           set_side = 6, 
                           category.names = c('Fast', 'Moderate'))
-ggsave("fast_v_moderate.png", fast_v_moderate)
+ggsave("../plots/archive/fast_v_moderate.png", fast_v_moderate)
 
 # Moderate vs. Slow
 
 moderate_v_slow <- ggVennDiagram(list(ASVs_moderate, ASVs_slow), 
               set_side = 6, 
               category.names = c('Moderate', 'Slow'))
-ggsave("moderate_v_slow.png", moderate_v_slow)
+ggsave("../plots/archive/moderate_v_slow.png", moderate_v_slow)
 
 # Fast vs. Moderate vs. Slow
 
@@ -56,7 +56,7 @@ fast_v_moderate_v_slow <- ggVennDiagram(list(ASVs_fast, ASVs_moderate, ASVs_slow
               set_side = 6, 
               category.names = c('Fast', 'Moderate', 'Slow')) +
           scale_fill_gradient(low = "#a584d1", high = "#fcba65", limits = c(3, 70))
-ggsave("fast_v_moderate_v_slow.jpg", fast_v_moderate_v_slow)
+ggsave("../plots/coreMicrobiome.jpg", fast_v_moderate_v_slow)
 
 
 # View the ASVs
@@ -66,3 +66,4 @@ tax_table(prune_taxa(ASVs_moderate, ps_genus))
 
 # Make a list
 swim_performance_list <- list("Fast" = ASVs_fast, "Slow" = ASVs_slow, "Moderate" = ASVs_moderate)
+

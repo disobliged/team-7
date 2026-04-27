@@ -1,10 +1,13 @@
+# Beta Diversity Plot
+# Bray-Curtis and Jaccard beta diversity plots are made using this file
+
 #loading libraries
 library(tidyverse)
 library(phyloseq)
 library(vegan)
 
 #loading ps
-ps = readRDS('../datasets/ps_filtered.rds') # TODO check file path
+ps = readRDS('../datasets/ps_filtered.rds')
 
 # Subset hindgut samples 
 ps_hindgut = subset_samples(ps, sample_type == "hindgut") # 97 hindgut samples 
@@ -133,12 +136,9 @@ stats_bray_fast_mod = adonis2(ps_bray_sub_fast_mod ~ swim_performance,
                               data = metadata %>% filter(swim_performance %in% c(to_compare_fast, to_compare_mod)))
 stats_jacc_fast_mod = adonis2(ps_jacc_sub_fast_mod ~ swim_performance, 
                               data = metadata %>% filter(swim_performance %in% c(to_compare_fast, to_compare_mod)))
-View(stats_bray_fast_mod)
-View(stats_jacc_fast_mod)
+
 # fast vs moderate are not significant in both Bray and Jaccard
 
-
-  
 # 3/ moderate & slow
 samples_to_keep_mod_slow = metadata %>% 
   filter(swim_performance %in% c(to_compare_mod, to_compare_slow)) %>% 
@@ -152,11 +152,8 @@ stats_bray_mod_slow = adonis2(ps_bray_sub_mod_slow ~ swim_performance,
                               data = metadata %>% filter(swim_performance %in% c(to_compare_mod, to_compare_slow)))
 stats_jacc_mod_slow = adonis2(ps_jacc_sub_mod_slow ~ swim_performance, 
                               data = metadata %>% filter(swim_performance %in% c(to_compare_mod, to_compare_slow)))
-View(stats_bray_mod_slow)
-View(stats_jacc_mod_slow)
+
 # moderate and slow are not significant in both Bray and Jaccard
-
-
 
 # Combining stats into a table
 stats = bind_rows('Univariate' = stats_univar_bray %>% as.data.frame() %>% 
@@ -190,7 +187,6 @@ stats_clean = stats %>% rename(Pval = `Pr(>F)`) %>% #renaming column to Pval
   filter(!is.na(Pval)) %>% # Removing irrelevant lines 
   select(-Variable) %>%
   relocate(Metric, .after = Comparison)
-#View(stats_clean) 
 
 ### Saving Output
 # Save plot
