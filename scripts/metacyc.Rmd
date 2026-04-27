@@ -12,7 +12,7 @@ library(ggpicrust2)
 library(latex2exp)
 ```
 # Picrust Analysis of MetaCyc
-This pipeline will be a complex analysis of the Picrust output we did on the class server.
+This pipeline will be a complex analysis of the Picrust output we did on the class server. It will also plot the volcano plot and the distribution of pathways for slow- and fast-swimming fish. Due to compatibility issues, only slow- and fast-swimming fish will be annotated.
 
 ## Input and Convert the Needed Files
 
