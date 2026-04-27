@@ -2,6 +2,9 @@
 title: Taxonomy Bar Plot of the Hingut
 ---
 
+# Hindgut Taxonomy Bar Plot
+
+This file makes a hindgut taxonomy bar plot for each of our swim performance groups.
 
 ```{r libraries, include=FALSE}
 
