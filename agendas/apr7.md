@@ -4,7 +4,7 @@ Research Question:
 
 ## Manuscript Draft - Minutes by SD
 
-- Go over manuscript draft - https://docs.google.com/document/d/1xqjqw3uDQjgkOmINYcQdKZzbYT_bLLjB/edit?usp=sharing&ouid=105196612420546302594&rtpof=true&sd=true
+- Go over manuscript draft 
 
 ### Notes 
 - Set soft deadline for pure editing/review, and give reference team enough time
