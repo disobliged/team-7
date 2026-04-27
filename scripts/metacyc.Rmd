@@ -9,7 +9,6 @@ output: html_document
 library(tidyverse)
 library(phyloseq)
 library(ggpicrust2)
-library(ggrepel)
 library(latex2exp)
 ```
 # Picrust Analysis of MetaCyc
@@ -53,9 +52,6 @@ meta_fast_slow = meta %>%
 ```{r DAA}
 
 # 1. Subset metadata to hindgut only
-
-# Change meta to the variables above
-# Which comparision should I use?
 hindgut <- meta_fast_slow %>% filter(sample_type == "hindgut")
 
 # 2. Keep only hindgut samples that actually exist in MetaCyc
@@ -66,10 +62,6 @@ valid_samples <- intersect(hindgut$sample_name, colnames(metacyc))
 metacyc_filt <- metacyc %>% 
   select(pathway,all_of(valid_samples)) %>% 
   column_to_rownames("pathway")
-
-# valid_samples = metacyc [
-#   ,hindgut$sample_name
-# ]
 
 # Perform pathway differential abundance analysis (DAA) using LinDA method
 daa_results_df = pathway_daa(abundance = metacyc_filt,
@@ -92,7 +84,7 @@ daa_annotated_results_df = pathway_annotation(pathway = "MetaCyc",
 
 saveRDS(daa_annotated_results_df,'../datasets/fish_daa_meta_annotated_results_df.rds')
 
-#daa_annotated_results_df<-readRDS('../datasets/fish_daa_meta_annotated_results_df.rds')
+# daa_annotated_results_df<-readRDS('../datasets/fish_daa_meta_annotated_results_df.rds')
 ```
 
 ```{r Box Plot}
@@ -117,20 +109,18 @@ box = counts %>%
 
 path_interest = box %>% 
   filter(pathway == c("PWY-4702","PWY-7579"))
-?facet_wrap
+
 boxplot = ggplot(path_interest, aes(x = swim_group, y = count, fill = swim_group))+
   geom_boxplot()+
+  geom_jitter(color = 'black', alpha = 0.6)+
   scale_fill_manual(values = c('#8E7CA6',"#fcba65"))+
   facet_wrap(~ pathway)+
   labs(x='Swim Speed', y='Count')
+boxplot
 
 ggsave('../plots/pathway_box.jpg',
        plot = boxplot,
        height=8.5, width = 14)
-
-# pathways overrepresented in fast group
-#briefly describe pathways
-#not end all be all reason
 ```
 
 
