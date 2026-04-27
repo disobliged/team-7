@@ -12,6 +12,8 @@ Analyses conducted in R to research how the hindgut microbiome affects fish swim
 > Does hindgut microbial diversity, core microbiota, differentially abundant taxa and predicted energy metabolic pathways correlate with swimming performance across fish species?
 
 ## Contributors!
+
+### Authors
 <a href="https://github.com/disobliged/Fish-Swim-Performance/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=disobliged/Fish-Swim-Performance" />
 </a>
