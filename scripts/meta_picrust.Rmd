@@ -1,6 +1,6 @@
 ---
 title: "Picrust"
-author: "SD"
+author: "SD and IY"
 date: "2026-03-23"
 output: html_document
 ---
@@ -12,7 +12,7 @@ library(ggpicrust2)
 ```
 # Principal Component Analysis of MetaCyc
 
-This pipeline will be a complex analysis of the Picrust output we did on the class server.
+This pipeline will be a complex analysis of the Picrust output we did on the class server. A principal component analysis was generated based on the pathways of fish and their swim performances.
 
 ## Input and Convert the Needed Files
 
