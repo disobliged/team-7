@@ -7,17 +7,22 @@ title: "Taxonomic Bar Plot"
 library(tidyverse)
 library(phyloseq)
 
+# Load object
 ps = readRDS('ps_filtered.rds')
 
-
+Making a phylum-level plot.
 ps_phylum = tax_glom(ps,'Phylum')
 ```
+Creating a basic version of the bar plot.
 
-
+```{r basic}
+# Converting to relative abundance, then melt
 relab = ps_phylum %>% 
   microbiome::transform('compositional') %>% 
   psmelt()
 
+
+#Creating swim performance groups
 
 relab <- relab %>%
   mutate(
@@ -29,6 +34,7 @@ relab <- relab %>%
     )
   )
 
+# Plotting it out
 plot_basic = relab %>% 
   ggplot(aes(Sample, Abundance, fill = Phylum)) +
   geom_col(position = 'stack')
@@ -36,7 +42,7 @@ plot_basic = relab %>%
 plot_basic
 
 
-
+```{r with formatting}
 plot_formatted = relab %>% 
   mutate(swim_group = str_to_title(swim_group)) %>%
   
@@ -46,22 +52,34 @@ plot_formatted = relab %>%
   facet_wrap(~swim_group, ncol = 3, scales = 'free') +
   
   theme_classic(base_size = 18) +
+#Stopping the sample names from overlapping
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+# Remove the x axis label 
   xlab(NULL)
 
 plot_formatted
 
 
+```{r abundance filtered}
+
+#averaging abundances of each phylum
 
 sum_of_each_phylum = taxa_sums(ps_phylum)
 avg_of_each_phylum = sum_of_each_phylum / sum(sum_of_each_phylum)
 
+# Finding which ones are <1%
+
 below_1 = avg_of_each_phylum[avg_of_each_phylum < 0.01]
 to_change = names(below_1)
+to_change
+
+# Changing the phylum name of these ones to '<1%'
 
 relab_modified = relab
 relab_modified$Phylum[relab_modified$OTU %in% to_change] = '<1%'
 
+
+#Plotting it again
 
 plot_abfilt = relab_modified %>% 
   mutate(swim_group = str_to_title(swim_group)) %>%
@@ -78,7 +96,7 @@ plot_abfilt = relab_modified %>%
 plot_abfilt
 
 
-
+#Averaging abundance by group
 
 averaged = relab_modified %>% 
   group_by(OTU, Phylum, swim_group) %>% 
@@ -99,11 +117,6 @@ plot_avg = averaged %>%
 
 plot_avg
 
-
-
-ggsave('hindgut_plot.jpeg',
-       plot = plot_avg,
-       height=4, width = 6) # units are inches by default
 
 
 ```
